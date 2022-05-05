@@ -20,6 +20,6 @@ const Navbar = () => {
     </header>
   </div>
   )
-}
+} 
 
 export default Navbar

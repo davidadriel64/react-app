@@ -9,7 +9,7 @@ function Card({title, imageok, desc}) {
       <h5 className="card-title">{title}</h5>
       <p className="card-text">{desc}</p>
       <Contador />
-      <button haref="#!" className="btn btn-success mt-2"> Agregar al carrito </button>
+      <button haref="#!" className="btn btn-success mt-2"> ver producto </button>
     </div>
   </div>
 

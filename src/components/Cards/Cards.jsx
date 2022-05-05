@@ -26,7 +26,7 @@ const cards = [
         },
 ]
 
-function Cards() {
+function Cards() { 
   return (
       <div className="container">
           <div className="row text-center justify-content-center gap-3">

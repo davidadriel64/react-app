@@ -27,6 +27,6 @@ const Contador = () => {
       <button onClick={sumar} className="btn btn-primary"> + </button>
     </div>
   );
-};
+}; 
 
 export default Contador;
