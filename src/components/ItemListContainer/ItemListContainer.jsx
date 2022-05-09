@@ -1,11 +1,29 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import ItemList from '../Item/ItemList'
+import { DaB } from '../DB/DaB'
 
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = () => {
+
+    const [productos, setProductos] = useState([])
+
+useEffect(() => {
+ const promesa = new Promise((resolve, reject) => {
+     setTimeout(() => {
+     resolve(DaB)
+     }, 2000)
+    })
+promesa.then((res) => {
+setProductos(res)
+  })
+
+ return () => {  } }, [])
+
     return (
-        <div className="pricing-header p-3 pb-md-4 mx-auto text-center">
-        <h1 className="display-4 fw-normal">{greeting}</h1>
-      </div>
+        <div>
+              {<ItemList productos={productos}/>}
+
+        </div>
     )
-  }
-  
-  export default ItemListContainer
+}
+
+export default ItemListContainer

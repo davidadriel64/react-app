@@ -1,11 +1,8 @@
-import React from 'react'
-import Card from '../Card/Card'
-
 import imagen1 from '../assets/imagen1.png'
 import imagen2 from '../assets/imagen2.png'
 import imagen3 from '../assets/imagen3.png'
 
-const cards = [
+export const DaB = [
         {
             id:1,
             title: "Escritura",
@@ -25,20 +22,3 @@ const cards = [
             imagok: imagen3
         },
 ]
-
-function Cards() { 
-  return (
-      <div className="container">
-          <div className="row text-center justify-content-center gap-3">
-         {
-             cards.map(card => (
-                <Card title={card.title} imageok={card.imagok} desc={card.desc} />
-             )) 
-         }
-         
-          </div>
-      </div>
-  )
-}
-
-export default Cards
