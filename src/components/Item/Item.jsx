@@ -1,8 +1,8 @@
 import React from 'react'
-import Contador from '../Contador/Contador'
+import { Link } from 'react-router-dom';
 
 const Item = ({productos}) => {
-  const {title, imagok, desc} = productos
+  const {id, desc, imagok, title} = productos
    return (
 
     <div className="card" style={{width: 18 + 'rem',}}>
@@ -10,8 +10,7 @@ const Item = ({productos}) => {
     <div className="card-body">
       <h5 className="card-title">{title}</h5>
       <p className="card-text">{desc}</p>
-      <Contador />
-      <button haref="#!" className="btn btn-success mt-2"> ver producto </button>
+     <Link to={`/ItemDetail/${id}`}><button haref="#!" className="btn btn-success mt-2"> ver producto </button></Link>
     </div>
   </div>
 

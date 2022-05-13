@@ -1,17 +1,12 @@
 
 import React from 'react';
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-
-import Footer from './components/Footer/Footer';
+import Rutas from './routes/Rutas';
 
 function App() {
   return (
     <div>
-    <Navbar />
-    <ItemListContainer/>
-    <Footer />
+    <Rutas />
     </div>
   );
 }
